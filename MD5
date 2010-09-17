@@ -1,0 +1,10 @@
+9dc9b5c27cffb0f570c97cb6f795f74e *DESCRIPTION
+8a6554a7865cabc40199f2d7835418ef *R/mpmcorrelogram.R
+f5cce001fd38cf8e700151caf500da20 *R/plot.mpmcorrelogram.R
+f1ff2358b13da9fd42ff2931f3bedf1b *R/print.mpmcorrelogram.R
+78dc54ad771e75f66ba5536080904e8e *data/D.rda
+0f84a93a6ea93b0614d092b2aa7e5f80 *data/S.rda
+da7bb68cffdd6ae8ec906cb79543775a *data/Zd.rda
+505d85e5f3d5da50f643390eb40a54f1 *inst/CITATION
+6a0c6e28e8fa45bf4c320777a1740224 *man/example.data.Rd
+e11d267defa03e1062e95b8b71e3baa0 *man/mpmcorrelogram.Rd

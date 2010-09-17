@@ -4,11 +4,11 @@
 \alias{plot.mpmcorrelogram}
 \title{Multivariate Partial Mantel Correlogram}
 \description{
-  Function mpmcorrelogram computes both multivariate and multivariate partial
+  Function \code{mpmcorrelogram} computes both multivariate and multivariate partial
   Mantel correlograms. Multivariate Mantel correlograms were proposed by Sokal
   (1986) and Oden and Sokal (1986) and popularized among ecologists by Legendre
   and Legendre (1998, pp. 736-738). Multivariate partial Mantel correlograms
-  are described and employed by Matesanz et al (submited).
+  are described and employed by Matesanz et al. (2011).
 }
 \usage{
   mpmcorrelogram(xdis, geodis, zdis = NULL, method = "pearson",
@@ -103,7 +103,7 @@
   performed by \pkg{vegan}'s \link[vegan]{mantel.partial} function.
   
   A practical application of the use of the partial Mantel correlogram 
-  can be seen in Matesanz et al. (submited).
+  can be seen in Matesanz et al. (2011).
 }
 \value{
   If the arguments \code{plot} and \code{print} are both \code{TRUE}, 
@@ -140,9 +140,9 @@
   Mantel, N. 1967. The detection of disease clustering and a generalized
     regression approach. \emph{Cancer Res.} 27: 209-220. 
 
-  Matesanz, S., T. E. Gimeno, M. de la Cruz, A. Escudero and F. Valladares.
-    Fine-scale spatial patterns and genetic structure of two co-occurring
-    plant congeners. \emph{submitted}, 2010.
+  Matesanz S., Gimeno T.E., de la Cruz M., Escudero A. and Valladares F. 2011.
+    Competition may explain the fine-scale spatial patterns and genetic structure
+    of two co-occurring plant congeners. \emph{J. Ecol.} 99: 838-848
     
   Oden, N. L. and R. R. Sokal. 1986. Directional autocorrelation: an extension
     of spatial correlograms to two dimensions. \emph{Syst. Zool.} 35: 608-617. 
@@ -156,6 +156,7 @@
 \author{
   Marcelino de la Cruz Rot \email{marcelino.delacruz@upm.es}
 }
+
 
 \note{
   The implementation of the Mantel correlogram computation in
@@ -175,6 +176,11 @@
   \pkg{vegan}'s \link[vegan]{mantel.correlog} for another implementation of 
   (non-partial) Mantel correlograms.
 }
+
+\section{Acknowledgements}{
+  This package  has been developed thaks to the subvention 099/RN08/02.1 of the Spanish Ministerio de Medio Ambiente, Medio Rural y Marino.
+}
+
 
 \examples{
  # Example from Figure 13.12 of Legendre and Legendre (1998):
