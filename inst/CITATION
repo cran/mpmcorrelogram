@@ -1,0 +1,25 @@
+citHeader("To cite", sQuote("mpmcorrelogram"), "in publications, please use:")
+
+citEntry(entry = "article",
+         title = "Fine-scale spatial patterns and genetic structure of two co-occurring plant congeners.",
+         author = personList(
+           as.person("Silvia Matesanz"),
+           as.person("Teresa E. Gimeno"),
+           as.person("Marcelino de la Cruz"),
+           as.person("Adrian Escudero"),           
+           as.person("Fernando Valladares")
+           ),
+         journal = "submited",
+         volume= "",
+         number = "",
+         pages = "",
+         year  = "2010",
+         note  = "",
+         
+	 textVersion = paste(
+		"S. Matesanz, T.E. Gimeno, M. de la Cruz, A. Escudero and F. Valladares.",
+		"Fine-scale spatial patterns and genetic structure of two co-occurring plant congeners.",
+	        "submited 2010"),
+         )
+
+
