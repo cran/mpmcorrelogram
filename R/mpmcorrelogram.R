@@ -7,6 +7,9 @@ mpmcorrelogram <-function (xdis, geodis, zdis=NULL, method="pearson",
   xdis <- as.dist(xdis)
   ydis <- as.dist(geodis)
   if(!is.null(zdis)) zdis <- as.dist(zdis)
+
+  # manage breaks and numbre of distace classes
+  nclas <- NULL
   if(is.null(breaks)){
     # set the number of distance-classes
     if(!is.null(nclass)){
@@ -23,6 +26,7 @@ mpmcorrelogram <-function (xdis, geodis, zdis=NULL, method="pearson",
     breaks <- seq(cmin, cmax, le = nclas+1)
     breaks[nclas+1] <- breaks[nclas+1]+1
   }
+   if(is.null(nclas)) nclas <- length(breaks)-1 
    
   # inner function to compute p-values 
   pepe <- function(x) ifelse(x[1]>=0, length(which(x>=x[1]))/ length(x),
@@ -52,7 +56,7 @@ mpmcorrelogram <-function (xdis, geodis, zdis=NULL, method="pearson",
        clases <- c(clases, paste(signif(breaks[i],3)," - ",
                                  signif(breaks[i+1],3)))
     }
-    cat("\n")
+    cat("\n\n")
   }
   else{
     # Mantel correlogram
@@ -70,7 +74,7 @@ mpmcorrelogram <-function (xdis, geodis, zdis=NULL, method="pearson",
                                      mantelr[[i]]$perm)))
        clases <- c(clases, paste(round(breaks[i],3)," - ",round(breaks[i+1],3)))
     }
-    cat("\n")
+    cat("\n\n")
   }
   pvalues.adj <- pvalues*(1:length(pvalues))
 
@@ -83,6 +87,7 @@ mpmcorrelogram <-function (xdis, geodis, zdis=NULL, method="pearson",
   if(print==TRUE){
     print(data.frame(class = 1:nclas, distance.range=clases, rM = estadistico,
                      p =pvalues, p.Bonferroni=pvalues.adj))
+    cat("\n\n")
   }
   result <- list(breaks=breaks, rM=estadistico, signif=significatividad,
                  pvalues=pvalues, pval.Bonferroni= pvalues.adj,

@@ -1,0 +1,11 @@
+# Export regular functions
+export("mpmcorrelogram")
+
+# Import all packages listed as Imports or Depends
+importFrom(vegan, mantel)
+
+## Registration of S3 methods
+import(stats)
+import(graphics)
+S3method(plot, mpmcorrelogram)
+S3method(print, mpmcorrelogram)
