@@ -1,17 +1,18 @@
 Package: mpmcorrelogram
 Type: Package
 Title: Multivariate Partial Mantel Correlogram
-Version: 0.1-2
+Version: 0.1-3
 Depends: vegan
-Date: 2012-05-02
+Date: 2013-03-13
 Author: Marcelino de la Cruz
 Maintainer: Marcelino de la Cruz <marcelino.delacruz@upm.es>
 Description: Functions to compute and plot multivariate (partial)
         Mantel correlograms.
-License: GPL-2
+License: GPL (>= 2)
 LazyLoad: yes
 Acknowledgements: subvention 099/RN08/02.1 of the Spanish Ministerio de
         Medio Ambiente, Medio Rural y Marino.
-Packaged: 2012-05-02 13:01:19 UTC; MCR
+Packaged: 2013-03-13 20:12:39 UTC; mc
+NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2012-05-02 13:22:03
+Date/Publication: 2013-03-13 21:28:30
