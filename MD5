@@ -1,6 +1,6 @@
-26314e2f7ed104c0945c57d2ebb70a99 *DESCRIPTION
-692b6392afc07e785773305c117eb868 *NAMESPACE
-2f6f6b04edfeeb9d923e8d99dcab6b63 *R/mpmcorrelogram.R
+0ef5a75bc19a4c693a8b03e5c5952d2a *DESCRIPTION
+b67c5abc3535b8612e5366bfac939f93 *NAMESPACE
+f724d737f70b554a4c3659e475a23f00 *R/mpmcorrelogram.R
 f5cce001fd38cf8e700151caf500da20 *R/plot.mpmcorrelogram.R
 f1ff2358b13da9fd42ff2931f3bedf1b *R/print.mpmcorrelogram.R
 78dc54ad771e75f66ba5536080904e8e *data/D.rda

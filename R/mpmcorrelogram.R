@@ -3,7 +3,7 @@ mpmcorrelogram <-function (xdis, geodis, zdis=NULL, method="pearson",
                            permutations=999, strata, simil=FALSE, plot=TRUE,
                            print=TRUE){
    
-  require (vegan)
+
   xdis <- as.dist(xdis)
   ydis <- as.dist(geodis)
   if(!is.null(zdis)) zdis <- as.dist(zdis)

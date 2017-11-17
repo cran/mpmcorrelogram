@@ -2,7 +2,7 @@
 export("mpmcorrelogram")
 
 # Import all packages listed as Imports or Depends
-importFrom(vegan, mantel)
+importFrom(vegan, mantel, mantel.partial)
 
 ## Registration of S3 methods
 import(stats)
