@@ -1,13 +1,13 @@
 citHeader("To cite", sQuote("mpmcorrelogram"), "in publications, please use:")
 
-citEntry(entry = "article",
-         title = "Competition mayvexplain the fine-scale spatial patterns and genetic structure of two co-occurring plant congeners.",
-         author = personList(
-           as.person("Silvia Matesanz"),
-           as.person("Teresa E. Gimeno"),
-           as.person("Marcelino de la Cruz"),
-           as.person("Adrian Escudero"),           
-           as.person("Fernando Valladares")
+bibentry(bibtype = "article",
+         title = "Competition may explain the fine-scale spatial patterns and genetic structure of two co-occurring plant congeners.",
+         author = c(
+           person("Silvia", "Matesanz", role="aut"),
+           person("Teresa E.",  "Gimeno", role="aut"),
+           person("Marcelino", "de la Cruz", role="aut"),
+           person("Adrian", "Escudero", role="aut"),           
+           person("Fernando", "Valladares", role="aut")
            ),
          journal = "Journal of Ecology",
          volume= "99",
@@ -16,10 +16,10 @@ citEntry(entry = "article",
          year  = "2011",
          note  = "",
          
-	 textVersion = paste(
-		"S. Matesanz, T.E. Gimeno, M. de la Cruz, A. Escudero and F. Valladares.",
-		"Competition may explain the fine-scale spatial patterns and genetic structure of two co-occurring plant congeners.",
-	        "Journal of Ecology 99: 838-848 (2011)."),
+         textVersion = paste(
+                 "S. Matesanz, T.E. Gimeno, M. de la Cruz, A. Escudero and F. Valladares.",
+                 "Competition may explain the fine-scale spatial patterns and genetic structure of two co-occurring plant congeners.",
+                "Journal of Ecology 99: 838-848 (2011)."),
          )
 
 
